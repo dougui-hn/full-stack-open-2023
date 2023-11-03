@@ -1,0 +1,12 @@
+title New Note SPA
+
+note over browser:
+The browser executes the event handler
+and it creates a new note,
+adds it to the notes list,
+rerenders the note list on the page
+and sends the new note to the server.
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa\nThe Payload sent to the server:[{"content": "Hola Mundo!", "date": "2023-11-01T21:20:46.112Z"}]
+server-->browser: The server responds with HTTP status code 201 Create
